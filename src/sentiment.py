@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# ── Configurações ──────────────────────────────────────────────
+# Configurações
 INPUT_PATH  = "data/processed/tweets_processados.csv"
 OUTPUT_PATH = "data/processed/tweets_sentimentos.csv"
 MODEL_NAME  = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
@@ -17,7 +17,7 @@ LABELS = {
     "LABEL_2": "positivo"
 }
 
-# ── Carregamento do modelo ─────────────────────────────────────
+# Carregamento do modelo
 
 def carregar_modelo():
     print("[BERT] Carregando modelo...")
@@ -27,7 +27,7 @@ def carregar_modelo():
     print("[BERT] Modelo carregado.")
     return tokenizer, model
 
-# ── Classificação ──────────────────────────────────────────────
+# Classificação
 
 def classificar_bert(texto: str, tokenizer, model) -> dict:
     inputs = tokenizer(
@@ -52,8 +52,6 @@ def classificar_bert(texto: str, tokenizer, model) -> dict:
         "score_neutro":     round(scores[1].item(), 4),
         "score_positivo":   round(scores[2].item(), 4),
     }
-
-# ── Pipeline principal ─────────────────────────────────────────
 
 def main():
     os.makedirs("data/processed", exist_ok=True)
