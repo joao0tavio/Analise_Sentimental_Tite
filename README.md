@@ -1,4 +1,4 @@
-# Análise de Sentimentos: Tite no Cruzeiro 🦊
+# Análise de Sentimentos: Tite no Cruzeiro
 
 ## Sobre o Projeto
 O projeto consiste em extrair tweets e analisar esses dados a fim de descobrir os sentimentos e a percepção da torcida do Cruzeiro em relação ao atual treinador da equipe, Tite. A análise é feita aplicando técnicas de Processamento de Linguagem Natural (NLP) e Machine Learning para classificar a opinião pública e cruzar esses dados com métricas de engajamento.
@@ -50,7 +50,7 @@ A partir do notebook de análises exploratórias, investigamos os seguintes cen�
   ![Confiança do Modelo](img\ConfiancaModelo.png)
 
 ## Estrutura de Diretórios
-```text
+
 ├── data/
 │   ├── processed/       # Dados limpos e resultados da análise de sentimento
 │   └── raw/             # Dados brutos coletados do Twitter/X
@@ -65,5 +65,5 @@ A partir do notebook de análises exploratórias, investigamos os seguintes cen�
 └── README.md            # Documentação do projeto
 
 
-Este projeto está licenciado sob a MIT License.
-Desenvolvido por João Otávio Gurgel de Oliveira. Projeto para fins de classificação de sentimentos em tweets sobre o Tite no Cruzeiro. 
+### Este projeto está licenciado sob a MIT License.
+### Desenvolvido por João Otávio Gurgel de Oliveira. Projeto para fins de classificação de sentimentos em tweets sobre o Tite no Cruzeiro. 
